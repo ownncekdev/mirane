@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IT'S 8PM ON A FCKING FRIDAY - DROP 001</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a0a;color:#f5f5f5;font-family:'Inter',sans-serif}
+.bebas{font-family:'Bebas Neue',sans-serif;letter-spacing:2px}
+.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;background:radial-gradient(circle at 50% 50%, #1a1a1a 0%, #0a0a0a 100%)}
+.hero h1{font-size:12vw;line-height:0.9;text-align:center}
+.product{display:flex;min-height:100vh;align-items:center;padding:80px 5%;gap:5%;flex-wrap:wrap;background:#0f0f0f}
+.img-container{position:relative;width:100%;aspect-ratio:1;background:#111;overflow:hidden;border:1px solid #222}
+.img-container img{width:100%;height:100%;object-fit:cover;transition:0.6s}
+.img-container img.back{position:absolute;top:0;left:0;opacity:0}
+.img-container:hover img.front{opacity:0} .img-container:hover img.back{opacity:1}
+.thumbs{display:flex;gap:15px;margin-top:20px}
+.thumbs button{flex:1;height:80px;border:1px solid #333;background:#111;cursor:pointer}
+.thumbs button.active{border-color:#c9a86a}
+.badge{border:1px solid #c9a86a;color:#c9a86a;padding:6px 14px;font-size:11px;letter-spacing:3px;margin-bottom:20px;display:inline-block}
+.product-info{flex:1;min-width:320px}
+.price{font-size:48px;font-family:'Bebas Neue';margin:30px 0}
+.btn{width:100%;padding:22px;background:#f5f5f5;color:#0a0a0a;border:none;font-family:'Bebas Neue';font-size:20px;letter-spacing:3px;cursor:pointer}
+.btn:hover{background:#c9a86a}
+</style>
+</head>
+<body>
+<section class="hero">
+<h1 class="bebas"><span style="font-size:4vw;letter-spacing:10px;font-weight:300">IT'S 8PM ON A</span><br><span style="color:#c9a86a">FCKING</span><br><span style="font-family:'Playfair Display';font-style:italic;text-transform:lowercase">Friday</span></h1>
+<p style="opacity:0.4;letter-spacing:5px;font-size:12px;margin-top:20px">DROP 001 / WASHED BLACK / 280GSM</p>
+</section>
+<section class="product">
+<div style="flex:1;min-width:320px">
+<div class="img-container">
+<img id="frontImg" src="https://cdn.jsdelivr.net/gh/ownncekdev/mirame@main/kaos_depan_asli_1x1_1080.png">
+<img id="backImg" class="back" src="https://cdn.jsdelivr.net/gh/ownncekdev/mirame@main/kaos_belakang_asli_1x1_1080.png">
+</div>
+<div class="thumbs">
+<button class="active" onclick="document.getElementById('frontImg').style.opacity='1';document.getElementById('backImg').style.opacity='0'"><img src="https://cdn.jsdelivr.net/gh/ownncekdev/mirame@main/kaos_depan_asli_1x1_1080.png" style="width:100%;height:100%;object-fit:cover"></button>
+<button onclick="document.getElementById('frontImg').style.opacity='0';document.getElementById('backImg').style.opacity='1'"><img src="https://cdn.jsdelivr.net/gh/ownncekdev/mirame@main/kaos_belakang_asli_1x1_1080.png" style="width:100%;height:100%;object-fit:cover"></button>
+</div>
+</div>
+<div class="product-info">
+<div class="badge">LIMITED - 50 PCS ONLY</div>
+<h2 class="bebas" style="font-size:5vw;line-height:0.9">FRIDAY<br>AT 8PM<br>TEE</h2>
+<p style="opacity:0.6;line-height:1.8;margin:20px 0">280GSM washed black, garment washed, sablon vintage engraving 3 botol: Stella Rosa, Clase Azul, Dom Perignon. Oversized boxy fit.</p>
+<div class="price">Rp 189.000</div>
+<button class="btn" onclick="window.open('https://wa.me/628xxx?text=Mau%20order%20FCKING%20FRIDAY')">PRE-ORDER VIA WHATSAPP</button>
+</div>
+</section>
+</body>
+</html>
